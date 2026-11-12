@@ -1,0 +1,463 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mega Lanches: hambúrgueres artesanais, combos, porções e bebidas geladas. Peça online e receba quentinho em casa!">
+  <meta name="theme-color" content="#B91C1C">
+  <title>Mega Lanches — O verdadeiro sabor artesanal</title>
+  
+  <!-- Tipografia: Google Fonts (Poppins) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="topo">
+
+  <!-- Link de acessibilidade para navegação por teclado -->
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- CABEÇALHO -->
+  <header class="cabecalho">
+    <div class="container">
+      <a class="logo" href="#topo">
+        <span class="logo-icone" aria-hidden="true">🍔</span>
+        <span>Mega Lanches</span>
+      </a>
+      <nav class="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="#categorias">Categorias</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#como-pedir">Como pedir</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <a class="botao botao-contorno" href="#cardapio">Fazer Pedido</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- HERO (Banner Principal) -->
+    <section class="hero" style="background-image: url('img/Burger, hamburger with french fries and fresh vegetables.jpg');">
+      <div class="hero-fundo"></div>
+      <div class="container">
+        <div class="hero-texto">
+          <span class="hero-tag">🔥 Aberto hoje até às 23h30</span>
+          <h1>O verdadeiro sabor do hambúrguer artesanal</h1>
+          <p>Ingredientes frescos, carne suculenta na brasa e aquele molho especial da casa. Escolha seu lanche favorito e receba rapidinho!</p>
+
+          <form class="busca" action="#cardapio" method="get" role="search">
+            <label class="campo">
+              <span>O que você quer comer?</span>
+              <input type="text" name="busca" placeholder="Ex: Cheeseburger, Combo Duplo, Hot Dog...">
+            </label>
+            <label class="campo">
+              <span>Categoria</span>
+              <select name="categoria">
+                <option value="todos">Todo o cardápio</option>
+                <option value="burgers">Hambúrgueres</option>
+                <option value="combos">Combos</option>
+                <option value="porcoes">Porções e Hot Dog</option>
+                <option value="bebidas">Bebidas</option>
+              </select>
+            </label>
+            <button class="botao" type="submit">Ver Opções</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS / BENEFÍCIOS -->
+    <section class="beneficios">
+      <div class="container">
+        <ul class="lista-beneficios">
+          <li>
+            <span class="beneficio-icone" aria-hidden="true">🥩</span>
+            <div>
+              <strong>Carne 100% artesanal</strong>
+              <p>Blend selecionado preparado fresco todos os dias.</p>
+            </div>
+          </li>
+          <li>
+            <span class="beneficio-icone" aria-hidden="true">🛵</span>
+            <div>
+              <strong>Entrega rápida</strong>
+              <p>Seu pedido sai direto da chapa para a sua mesa.</p>
+            </div>
+          </li>
+          <li>
+            <span class="beneficio-icone" aria-hidden="true">💳</span>
+            <div>
+              <strong>Pagamento facilitado</strong>
+              <p>Aceitamos Pix, cartões de crédito, débito e vale-refeição.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CATEGORIAS -->
+    <section id="categorias" class="secao">
+      <div class="container">
+        <div class="titulo-secao">
+          <h2>Explore nosso cardápio</h2>
+          <p>Clique em uma categoria para ir direto ao que dá água na boca.</p>
+        </div>
+        <ul class="grade-categorias">
+          <li>
+            <a class="categoria" href="#cardapio">
+              <img src="img/Best Ever Cheeseburger Recipe (Juicy, Melty, Fast) - My Home Made Recipe.jpg" alt="Hambúrguer artesanal com queijo e picles" loading="lazy">
+              <span>Artesanais</span>
+            </a>
+          </li>
+          <li>
+            <a class="categoria" href="#cardapio">
+              <img src="img/Burger, hamburger with french fries and fresh vegetables.jpg" alt="Combo hambúrguer com batata frita e refrigerante" loading="lazy">
+              <span>Combos</span>
+            </a>
+          </li>
+          <li>
+            <a class="categoria" href="#cardapio">
+              <img src="img/download.jpg" alt="Combo duplo com batata cheddar e bacon" loading="lazy">
+              <span>Para Dividir</span>
+            </a>
+          </li>
+          <li>
+            <a class="categoria" href="#cardapio">
+              <img src="img/Brazilian hot dog.jpg" alt="Cachorro-quente completo na tábua" loading="lazy">
+              <span>Hot Dog</span>
+            </a>
+          </li>
+          <li>
+            <a class="categoria" href="#cardapio">
+              <img src="img/Federico Montero, cocinero_ “La mejor papa frita del mundo se hace con 15g de vinagre por litro de agua” _ TN.jpg" alt="Porção de batata frita crocante" loading="lazy">
+              <span>Porções</span>
+            </a>
+          </li>
+          <li>
+            <a class="categoria" href="#cardapio">
+              <img src="img/milkshake.jpg" alt="Milkshake cremoso" loading="lazy">
+              <span>Bebidas</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CARDÁPIO COMPLETO -->
+    <section id="cardapio" class="secao secao-branca">
+      <div class="container">
+        <div class="eventos-topo">
+          <div class="titulo-secao">
+            <h2>Os mais pedidos da casa</h2>
+            <p>Escolha seu lanche, acompanhamento ou bebida gelada.</p>
+          </div>
+          <ul class="filtros">
+            <li><a class="ativo" href="#cardapio">Todos</a></li>
+            <li><a href="#cardapio">Lanches</a></li>
+            <li><a href="#cardapio">Combos</a></li>
+            <li><a href="#cardapio">Porções</a></li>
+            <li><a href="#cardapio">Bebidas</a></li>
+          </ul>
+        </div>
+
+        <div class="grade-eventos">
+
+          <!-- Item 1: Cheeseburger Artesanal -->
+          <article class="card">
+            <div class="card-imagem">
+              <img src="img/Best Ever Cheeseburger Recipe (Juicy, Melty, Fast) - My Home Made Recipe.jpg" alt="Cheeseburger artesanal com pão com gergelim, queijo derretido, picles, cebola roxa e molho especial" loading="lazy">
+              <span class="selo">Mais pedido</span>
+            </div>
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-evento">Hambúrguer Artesanal</p>
+                <h3>Mega Cheeseburger Especial</h3>
+                <p class="descricao-item">Pão com gergelim tostado, hambúrguer suculento 180g, queijo cheddar derretido, alface, tomate, cebola roxa, picles e molho especial da casa.</p>
+              </div>
+              <div class="card-rodape">
+                <p class="preco"><span>por apenas</span> R$ 26,90</p>
+                <a class="botao" href="#contato">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 2: Combo Mega Completo -->
+          <article class="card">
+            <div class="card-imagem">
+              <img src="img/Burger, hamburger with french fries and fresh vegetables.jpg" alt="Hambúrguer artesanal com cebola caramelizada, acompanhado de batatas fritas e copo de refrigerante" loading="lazy">
+              <span class="selo">Campeão de vendas</span>
+            </div>
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-evento">Combo</p>
+                <h3>Combo Mega Cheddar &amp; Cebola</h3>
+                <p class="descricao-item">Hambúrguer artesanal com queijo cheddar, cebola caramelizada, tomate e alface + batatas fritas crocantes + refrigerante gelado.</p>
+              </div>
+              <div class="card-rodape">
+                <p class="preco"><span>por apenas</span> R$ 37,90</p>
+                <a class="botao" href="#contato">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 3: Combo Duplo com Cheddar e Bacon -->
+          <article class="card">
+            <div class="card-imagem">
+              <img src="img/download.jpg" alt="Dois hambúrgueres artesanais na bandeja acompanhados de batata frita ondulada com cheddar e bacon" loading="lazy">
+              <span class="selo">Para dividir</span>
+            </div>
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-evento">Combo Família</p>
+                <h3>Combo Duplo Mega Cheddar</h3>
+                <p class="descricao-item">2 hambúrgueres artesanais suculentos com queijo e molho especial + porção generosa de batata frita coberta com cheddar cremoso e bacon em cubos.</p>
+              </div>
+              <div class="card-rodape">
+                <p class="preco"><span>por apenas</span> R$ 54,90</p>
+                <a class="botao" href="#contato">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 4: Cachorro-quente Brasileiro -->
+          <article class="card">
+            <div class="card-imagem">
+              <img src="img/Brazilian hot dog.jpg" alt="Cachorro-quente brasileiro servido na tábua de madeira com milho, bacon e batata palha" loading="lazy">
+              <span class="selo">Caprichado</span>
+            </div>
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-evento">Hot Dog</p>
+                <h3>Hot Dog Brasileiro Completo</h3>
+                <p class="descricao-item">Pão macio, salsicha ao molho especial, cubos de bacon crocante, milho verde e bastante batata palha sequinha por cima.</p>
+              </div>
+              <div class="card-rodape">
+                <p class="preco"><span>por apenas</span> R$ 18,90</p>
+                <a class="botao" href="#contato">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 5: Batata Frita Crocante -->
+          <article class="card">
+            <div class="card-imagem">
+              <img src="img/Federico Montero, cocinero_ “La mejor papa frita del mundo se hace con 15g de vinagre por litro de agua” _ TN.jpg" alt="Prato de batatas fritas douradas e temperadas acompanhadas de potinho de ketchup" loading="lazy">
+              <span class="selo">Acompanhamento</span>
+            </div>
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-evento">Porções</p>
+                <h3>Batata Frita Temperada</h3>
+                <p class="descricao-item">Porção generosa de batatas fritas douradas, temperadas com ervas finas e sal. Acompanha potinho de ketchup artesanal.</p>
+              </div>
+              <div class="card-rodape">
+                <p class="preco"><span>por apenas</span> R$ 17,90</p>
+                <a class="botao" href="#contato">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 6: X-Bacon -->
+          <article class="card">
+            <div class="card-imagem">
+              <img src="img/xbacon.jpg" alt="X-Bacon artesanal com fatias crocantes de bacon" loading="lazy">
+              <span class="selo">Especial</span>
+            </div>
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-evento">Hambúrguer Artesanal</p>
+                <h3>Mega X-Bacon</h3>
+                <p class="descricao-item">Pão brioche, hambúrguer 180g, dobro de cheddar cremoso, fatias generosas de bacon crocante e maionese defumada.</p>
+              </div>
+              <div class="card-rodape">
+                <p class="preco"><span>por apenas</span> R$ 29,90</p>
+                <a class="botao" href="#contato">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 7: Frango Empanado -->
+          <article class="card">
+            <div class="card-imagem">
+              <img src="img/frango.jpg" alt="Tiras de frango empanado crocante" loading="lazy">
+              <span class="selo">Crocante</span>
+            </div>
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-evento">Porções</p>
+                <h3>Frango Empanado (Tiras)</h3>
+                <p class="descricao-item">Tiras de peito de frango temperadas e empanadas na farinha panko. Acompanha molho barbecue ou rosé.</p>
+              </div>
+              <div class="card-rodape">
+                <p class="preco"><span>por apenas</span> R$ 24,90</p>
+                <a class="botao" href="#contato">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 8: Milkshake -->
+          <article class="card">
+            <div class="card-imagem">
+              <img src="img/milkshake.jpg" alt="Milkshake de chocolate com chantilly" loading="lazy">
+              <span class="selo">Sobremesa</span>
+            </div>
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-evento">Bebidas</p>
+                <h3>Milkshake Cremoso 400ml</h3>
+                <p class="descricao-item">Sorvete batido bem cremoso nos sabores Chocolate, Morango ou Ovomaltine, finalizado com chantilly.</p>
+              </div>
+              <div class="card-rodape">
+                <p class="preco"><span>por apenas</span> R$ 17,90</p>
+                <a class="botao" href="#contato">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 9: Suco Natural -->
+          <article class="card">
+            <div class="card-imagem">
+              <img src="img/suco.jpg" alt="Copo de suco natural gelado" loading="lazy">
+              <span class="selo">Natural</span>
+            </div>
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-evento">Bebidas</p>
+                <h3>Suco Natural 500ml</h3>
+                <p class="descricao-item">Feito na hora com frutas selecionadas: Laranja, Maracujá, Limão ou Abacaxi com Hortelã.</p>
+              </div>
+              <div class="card-rodape">
+                <p class="preco"><span>por apenas</span> R$ 10,90</p>
+                <a class="botao" href="#contato">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE A LANCHONETE (Destaque) -->
+    <section class="destaque">
+      <div class="container">
+        <div class="destaque-box">
+          <div class="destaque-imagem">
+            <img src="img/Burger, hamburger with french fries and fresh vegetables.jpg" alt="Hambúrguer artesanal servido na tábua com batata frita e refrigerante">
+          </div>
+          <div class="destaque-info">
+            <span class="hero-tag">Nossa história</span>
+            <h2>Feito na hora, com paixão pelo sabor</h2>
+            <p>O Mega Lanches nasceu com a missão de unir ingredientes de primeira qualidade, atendimento acolhedor e preço justo. Cada lanche é montado na hora para garantir máximo sabor em cada mordida.</p>
+            <ul class="meta meta-claro">
+              <li>📍 Avenida Principal, 1250 — Centro</li>
+              <li>🕒 Terça a Domingo, das 18h às 23h30</li>
+            </ul>
+            <div class="destaque-acoes">
+              <p class="preco"><span>combos a partir de</span> R$ 37,90</p>
+              <a class="botao" href="#cardapio">Conhecer cardápio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO PEDIR -->
+    <section id="como-pedir" class="secao secao-branca">
+      <div class="container">
+        <div class="titulo-secao titulo-centro">
+          <h2>Como fazer seu pedido</h2>
+          <p>Três passos simples para matar a sua fome.</p>
+        </div>
+        <ol class="passos">
+          <li>
+            <span class="passo-numero">1</span>
+            <h3>Escolha seus lanches</h3>
+            <p>Navegue pelo nosso cardápio e escolha seus hambúrgueres, combos e bebidas favoritos.</p>
+          </li>
+          <li>
+            <span class="passo-numero">2</span>
+            <h3>Envie pelo WhatsApp</h3>
+            <p>Informe os itens escolhidos, o endereço de entrega e a forma de pagamento.</p>
+          </li>
+          <li>
+            <span class="passo-numero">3</span>
+            <h3>Receba quentinho</h3>
+            <p>Nossa equipe prepara tudo na hora e envia rapidinho até a sua casa.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROMOÇÕES / NEWSLETTER -->
+    <section class="newsletter">
+      <div class="container">
+        <div>
+          <h2>Receba cupons de desconto</h2>
+          <p>Cadastre seu e-mail e ganhe 10% OFF no seu primeiro combo da semana.</p>
+        </div>
+        <form class="form-newsletter" action="#" method="post">
+          <input type="email" name="email" placeholder="Digite seu melhor e-mail" aria-label="Seu e-mail" required>
+          <button class="botao botao-secundario" type="submit">Quero cupom</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer id="contato" class="rodape">
+    <div class="container">
+      <div class="rodape-grade">
+        <div>
+          <p class="rodape-marca">
+            <span aria-hidden="true">🍔</span>
+            <span>Mega Lanches</span>
+          </p>
+          <p>Hambúrgueres artesanais, combos completos, porções e bebidas geladas feitos na hora.</p>
+          <ul class="redes">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">WhatsApp</a></li>
+            <li><a href="#">iFood</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Cardápio</h3>
+          <ul>
+            <li><a href="#cardapio">Hambúrgueres</a></li>
+            <li><a href="#cardapio">Combos</a></li>
+            <li><a href="#cardapio">Porções</a></li>
+            <li><a href="#cardapio">Bebidas</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Informações</h3>
+          <ul>
+            <li><a href="#como-pedir">Como pedir</a></li>
+            <li><a href="#categorias">Categorias</a></li>
+            <li><a href="#topo">Voltar ao topo</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contato &amp; Delivery</h3>
+          <address>
+            <p><a href="tel:+5517999999999">(17) 99999-9999</a></p>
+            <p><a href="mailto:contato@megalanches.exemplo">contato@megalanches.exemplo</a></p>
+            <p>Terça a Domingo: 18h às 23h30</p>
+          </address>
+        </div>
+      </div>
+      <div class="rodape-base">
+        <p>© 2026 Mega Lanches — Projeto desenvolvido para fins didáticos.</p>
+        <p>Feito com HTML5 e CSS3.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
